@@ -19,10 +19,18 @@ const getSingle = async (req, res) => {
     .collection('contacts')
     .find({ _id: userId });   
     
+    
+    
       result.toArray().then((lists) => {
         res.setHeader('Content-Type', 'application/json');
-        res.status(200).json(lists[0]);
+        if (lists.length > 0){
+        res.status(200).json(lists[0]);}else{
+          res.status(500).json('Some error occurred while finding the ID stated.');
+        }
+        
+        
       })
+      
    
  } else {
   res.status(500).json('Some error occurred while finding the ID stated.');
