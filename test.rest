@@ -5,7 +5,7 @@ GET http://localhost:3000/contacts
 ###
 
 
-GET http://localhost:3000/contacts/6266ad750dbab2d67242f12e
+GET http://localhost:3000/contacts/6266ad750dbab2d67242f12
 
 ###
 
@@ -20,3 +20,35 @@ GET http://localhost:3000/contacts/6266ad750dbab2d67242f12f
 ###
 
 GET http://localhost:3000/
+
+
+###
+
+POST http://localhost:3000/contacts HTTP/1.1
+content-type: application/json
+
+{
+"firstName":"Nicolas", 
+"lastName":"Pariente",
+ "email":"hnpf2019@gmail.com", 
+ "favoriteColor":"Green", 
+ "birthday":"02/15/98"
+}
+
+###
+
+DELETE http://localhost:3000/contacts/63bf762bf36 HTTP/1.1
+content-type: application/json
+
+###
+
+PUT http://localhost:3000/contacts/6266ad750dbab2d67242f HTTP/1.1
+content-type: application/json
+
+{
+"firstName":"Agustin", 
+"lastName":"Pariente",
+ "email":"test9@gmail.com", 
+ "favoriteColor":"Green", 
+ "birthday":"01/15/00"
+}
