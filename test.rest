@@ -5,11 +5,11 @@ GET http://localhost:3000/contacts
 ###
 
 
-GET http://localhost:3000/contacts/6266ad750dbab2d67242f12
+GET http://localhost:3000/contacts/63bf7fd54ca2a693338dffd1
 
 ###
 
-GET http://localhost:3000/contacts/6266ad750dbab2d67242f12d
+GET http://localhost:3000/contacts/63bf77305ec972b748968368
 
 
 ###
@@ -47,6 +47,19 @@ content-type: application/json
 
 {
 "firstName":"Agustin", 
+"lastName":"Pariente",
+ "email":"test9@gmail.com", 
+ "favoriteColor":"Green", 
+ "birthday":"01/15/00"
+}
+
+###
+
+PUT https://crazy341.onrender.com/contacts/63bf77305ec972b748968368 HTTP/1.1
+content-type: application/json
+
+{
+"firstName":"Nicolas", 
 "lastName":"Pariente",
  "email":"test9@gmail.com", 
  "favoriteColor":"Green", 
