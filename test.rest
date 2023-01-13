@@ -28,7 +28,7 @@ POST http://localhost:3000/contacts HTTP/1.1
 content-type: application/json
 
 {
-"firstName":"Nicolas", 
+"firstName":"Robert2", 
 "lastName":"Pariente",
  "email":"hnpf2019@gmail.com", 
  "favoriteColor":"Green", 
