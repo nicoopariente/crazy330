@@ -6,13 +6,10 @@ const cors = require('cors');
 
 const port = process.env.PORT || 3000;
 
-app.use(bodyParser.json()).use(cors({
-  origin: ['http://localhost:3000', 'https://crazy341.onrender.com/','https://cse341-contacts-frontend.netlify.app/']
+app.use(bodyParser.json())
+.use(cors({
+  origin: ['http://localhost:3000', 'https://crazy341.onrender.com','https://cse341-contacts-frontend.netlify.app']
 }))
-.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
-})
 .use('/', require('./routes'));
 
 
