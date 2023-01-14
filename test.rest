@@ -1,4 +1,4 @@
-
+CERT ENV
 ###
 GET http://localhost:3000/contacts
 
@@ -53,6 +53,11 @@ content-type: application/json
  "birthday":"01/15/00"
 }
 
+
+###
+
+PROD ENV
+
 ###
 
 PUT https://crazy341.onrender.com/contacts/63bf77305ec972b748968368 HTTP/1.1
@@ -65,3 +70,33 @@ content-type: application/json
  "favoriteColor":"Green", 
  "birthday":"01/15/00"
 }
+
+###
+
+GET https://crazy341.onrender.com/
+
+
+###
+
+###
+
+DELETE https://crazy341.onrender.com/contacts/63bf762bf36 HTTP/1.1
+content-type: application/json
+
+###
+
+
+###
+
+POST https://crazy341.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+"firstName":"Robert2", 
+"lastName":"Pariente",
+ "email":"hnpf2019@gmail.com", 
+ "favoriteColor":"Green", 
+ "birthday":"02/15/98"
+}
+
+###
